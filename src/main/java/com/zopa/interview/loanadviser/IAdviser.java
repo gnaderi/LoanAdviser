@@ -22,7 +22,7 @@ public interface IAdviser {
      * @return a double value as total pay.
      */
     default double calInterestRate(Long loanAmount, List<Lender> lenders) {
-        double sumRate = 0.0000d;
+        double sumRate = 0.00d;
         int count = 1;
         long borrowed = loanAmount.longValue();
         for (Lender lender : lenders) {
